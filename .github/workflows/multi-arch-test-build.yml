@@ -11,7 +11,12 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - arch: mips_24kc
+            target: ath79-generic
 
+          - arch: mipsel_24kc
+            target: mt7621
+            
           - arch: aarch64_cortex-a53
             target: mvebu-cortexa53
 
